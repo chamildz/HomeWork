@@ -32,6 +32,11 @@ For Each ws In Worksheets
             If ws.Cells(i, 1).Value <> ws.Cells(i + 1, 1).Value Then
                 
                 
+                    totalStockVolume = ws.Range("G" & i).Value + totalStockVolume
+                    ws.Range("M" & summaryTableRowNumber).Value = totalStockVolume
+                    totalStockVolume = 0
+                
+                
                     yearEndStockValue = ws.Range("F" & i).Value
                     
                     yearlyChange = yearEndStockValue - yearStartStockValue
@@ -65,7 +70,9 @@ For Each ws In Worksheets
                     
                     
                     summaryTableRowNumber = summaryTableRowNumber + 1
-                    totalStockVolume = 0
+                    
+                    
+                   
               
                 
                 
