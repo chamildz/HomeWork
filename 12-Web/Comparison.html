@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Visualization-Weather Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Latitude</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lat_temps.html">Latitude vs. Max Temperature</a></li>
+                            <li><a href="lat_hum.html">Latitude vs. Humidity</a></li>
+                            <li><a href="lat_cloud.html">Latitude vs. Cloudiness</a></li>
+                            <li><a href="lat_wind.html">Latitude vs. Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <div class="header">
+                            <h1 class="title">Comparison: Latitude vs. X</h1>
+                            <p class="category">Click any plot to get in_depth analysis.</p>
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <h2>vs. Max Temperature</h2>
+                                    <a href="./visualization-image-1.html"><img class="img-fluid" src="./output_data/CityLatitudeVsTemp.png" alt="Latitude vs. Max Temperature" height="500" width="500"></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <h2>vs. Humidity</h2>
+                                    <a href="./visualization-image-2.html"><img class="img-fluid" src="./output_data/CityLatitudeVsHumidity.png" alt="Latitude vs. Humidity" height="500" width="500"></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <h2>vs. Cloudiness</h2>
+                                    <a href="./visualization-image-3.html"><img class="img-fluid" src="./output_data/CityLatitudeVsCloudiness.png" alt="Latitude   vs. Cloudiness" height="500" width="500"></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <h2>vs. Wind Speed</h2>
+                                    <a href="./visualization-image-4.html"><img class="img-fluid" src="./output_data/CityLatitudeVsWindspeed.png" alt="Latitude vs. Wind Speed" height="500" width="500"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>
